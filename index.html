@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Jeopardy</title>
+  <link rel="stylesheet" href="styless/styles.css">
+</head>
+<body>
+  <h1>JavaScript Jeopardy</h1>
+  <div id="scoreboard">
+    <p>Score: <span id="score">0</span></p>
+    <p>Questions Answered: <span id="answered">0</span></p>
+  </div>
+
+  <div id="game-board">
+    <div class="category" data-category="Variables">
+      <button class="question-btn" data-value="100">100</button>
+      <button class="question-btn" data-value="200">200</button>
+      <button class="question-btn" data-value="300">300</button>
+      <button class="question-btn" data-value="400">400</button>
+      <button class="question-btn" data-value="500">500</button>
+    </div>
+    <div class="category" data-category="Functions">
+      <button class="question-btn" data-value="100">100</button>
+      <button class="question-btn" data-value="200">200</button>
+      <button class="question-btn" data-value="300">300</button>
+      <button class="question-btn" data-value="400">400</button>
+      <button class="question-btn" data-value="500">500</button>
+    </div>
+    <div class="category" data-category="Arrays">
+      <button class="question-btn" data-value="100">100</button>
+      <button class="question-btn" data-value="200">200</button>
+      <button class="question-btn" data-value="300">300</button>
+      <button class="question-btn" data-value="400">400</button>
+      <button class="question-btn" data-value="500">500</button>
+    </div>
+    
+  </div>
+
+  <div id="question-container" class="hidden">
+    <p id="question-text"></p>
+    <input type="text" id="answer-input" placeholder="Your Answer">
+    <button id="submit-answer">Submit</button>
+    <p id="feedback"></p>
+    <button id="next-question" class="hidden">Next Question</button>
+  </div>
+
+  <script src="scriptss/scripts.js"></script>
+</body>
+</html>
